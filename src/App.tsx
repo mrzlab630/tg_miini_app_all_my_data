@@ -153,6 +153,8 @@ function App() {
       return
     }
 
+    console.log('Telegram',Telegram)
+
     //@ts-ignore
     const {initDataUnsafe, platform} = Telegram.WebApp
 
