@@ -134,6 +134,9 @@ function App() {
 
   useEffect(() =>{
 
+    console.log('gogogogoggooo')
+
+
     fetchIP()
 
     // const {
