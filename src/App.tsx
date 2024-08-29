@@ -134,9 +134,6 @@ function App() {
 
   useEffect(() =>{
 
-    console.log('gogogogoggooo')
-
-
     fetchIP()
 
     // const {
@@ -161,12 +158,12 @@ function App() {
     //@ts-ignore
     const {initDataUnsafe, platform} = Telegram.WebApp
 
-    const {user} = initDataUnsafe
+    const {user,start_param} = initDataUnsafe
 
     if(!user){
       return
     }
-      setUserData({...user,platform})
+      setUserData({...user,platform,start_param})
   },[])
 
 
